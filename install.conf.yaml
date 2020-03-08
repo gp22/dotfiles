@@ -9,10 +9,8 @@
       force: true
     ~/.zshrc:
       force: true
+    ~/.bash_profile:
     ~/.bashrc:
-      if: '[ `uname` = Linux ]'
-    ~/.profile:
-      if: '[ `uname` = Linux ]'
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
