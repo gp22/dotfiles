@@ -21,12 +21,11 @@ fi
 
 # Source dotfiles
 
-for file in "$DOTFILES_DIR"/{path,aliases,functions}; do
+for file in "$DOTFILES_DIR"/{functions,aliases}; do
     [ -f "$file" ] && source "$file";
 done;
-unset file;
 
-if [ $(uname) = Darwin ]; then
+if is_macos; then
     for file in "$DOTFILES_DIR"/{prompt}.macos; do
         [ -f "$file" ] && source "$file";
     done
