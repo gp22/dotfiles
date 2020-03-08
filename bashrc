@@ -26,13 +26,13 @@ for file in "$DOTFILES_DIR"/{functions,aliases}; do
 done;
 
 if is_macos; then
-    for file in "$DOTFILES_DIR"/{prompt}.macos; do
-        [ -f "$file" ] && source "$file";
-    done
+    file="$DOTFILES_DIR"/prompt.macos
+
+    [ -f "$file" ] && source "$file";
 else
-    for file in "$DOTFILES_DIR"/{prompt}.linux; do
-        [ -f "$file" ] && source "$file";
-    done
+    file="$DOTFILES_DIR"/prompt.linux
+
+    [ -f "$file" ] && source "$file";
 fi
 unset file;
 
