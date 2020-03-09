@@ -10,7 +10,9 @@
     ~/.zshrc:
       force: true
     ~/.bash_profile:
+      path: bash/bash_profile
     ~/.bashrc:
+      path: bash/bashrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
