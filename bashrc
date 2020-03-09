@@ -21,20 +21,14 @@ fi
 
 # Source dotfiles
 
-for file in "$DOTFILES_DIR"/{functions,aliases}; do
+for file in "$DOTFILES_DIR"/{functions,aliases,prompt}; do
     [ -f "$file" ] && source "$file";
 done;
-
-if is_macos; then
-    file="$DOTFILES_DIR"/prompt.macos
-
-    [ -f "$file" ] && source "$file";
-else
-    file="$DOTFILES_DIR"/prompt.linux
-
-    [ -f "$file" ] && source "$file";
-fi
 unset file;
+
+# unset the is_macos function that was set in functions
+
+unset is_macos
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
