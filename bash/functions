@@ -1,6 +1,6 @@
 #!/bin/bash
 
 is_macos () {
-    [ $(uname) = Darwin ]
+    [ "$(uname)" = Darwin ]
     return
 }
