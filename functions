@@ -1,9 +1,14 @@
 # Curl examples of given command from cheat.sh
 cheat () {
+    # Set FUNCNAME if running zsh. Bash automatically sets it.
+    if [[ "$ZSH_NAME" ]]; then
+        local FUNCNAME="$(basename "$0")"
+    fi
+
     if [[ "$#" = 1 ]]; then
         curl cheat.sh/"$1"
     else
-        echo "Cheat requires one argument, but $# were given" >&2
+        echo "$FUNCNAME: usage: $FUNCNAME [command | \"command1 command2...\"]" >&2
         return 1
     fi
 }
