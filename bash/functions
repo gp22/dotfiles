@@ -1,6 +1,17 @@
 #!/bin/bash
 
+# Check if bash is running on a mac
 is_macos () {
     [ "$(uname)" = Darwin ]
     return
+}
+
+# Curl examples of given command from cheat.sh
+cheat () {
+    if [[ "$#" = 1 ]]; then
+        curl cheat.sh/"$1"
+    else
+        echo "Cheat requires one argument, but $# were given" >&2
+        return 1
+    fi
 }
