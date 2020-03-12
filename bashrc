@@ -12,12 +12,19 @@ fi
 
 # Resolve DOTFILES_DIR
 
-if [ -d "$HOME/.dotfiles/bash" ]; then
-    DOTFILES_DIR="$HOME/.dotfiles/bash"
+if [ -d "$HOME/.dotfiles" ]; then
+    DOTFILES_DIR="$HOME/.dotfiles"
 else
     echo "Unable to find dotfiles, exiting."
     return
 fi
+
+# Check if running on a mac
+
+is_macos () {
+    [ "$(uname)" = Darwin ]    
+    return
+}
 
 # Source dotfiles
 

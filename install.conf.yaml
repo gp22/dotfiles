@@ -10,9 +10,10 @@
     ~/.zshrc:
       force: true
     ~/.bash_profile:
-      path: bash/bash_profile
     ~/.bashrc:
-      path: bash/bashrc
+    ~/.oh-my-zsh/custom/functions.zsh:
+      if: '[ `$(echo "$ZSH_CUSTOM")` = `$(echo ~/.oh-my-zsh/custom)` ]'
+      path: functions
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
