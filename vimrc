@@ -48,7 +48,7 @@ autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
 " Prettify Markdown files
 augroup markdown
   au!
-  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=markdown
 augroup END
 
 " Highlight characters that go over 80 columns (by drawing a border on the 81st)
