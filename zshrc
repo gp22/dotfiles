@@ -72,6 +72,7 @@ ZSH_THEME="bira"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  colored-man-pages
   zsh-syntax-highlighting
   zsh-autosuggestions
 )
