@@ -10,7 +10,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
-elif is_macos; then
+elif is_bsd; then
     alias ls='ls -G'
 fi
 

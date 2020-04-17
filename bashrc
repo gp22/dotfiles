@@ -19,10 +19,10 @@ else
     return
 fi
 
-# Check if running on a mac
+# Check if running BSD
 
-is_macos () {
-    [ "$(uname)" = Darwin ]    
+is_bsd () {
+    [ "$(uname)" = FreeBSD ] || [ "$(uname)" = Darwin ]    
     return
 }
 
@@ -33,9 +33,9 @@ for file in "$DOTFILES_DIR"/{functions,aliases,prompt}; do
 done;
 unset file;
 
-# unset the is_macos function that was set in functions
+# unset the is_bsd function that was set in functions
 
-unset is_macos
+unset is_bsd
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
