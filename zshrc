@@ -109,7 +109,12 @@ source $ZSH/oh-my-zsh.sh
 
 if [ -e "$HOME/.nvm" ]; then
     export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-else
-    echo "NVM dir not found"
+
+    echo -n "Starting NVM: "
+
+    if [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"; then
+        echo "\e[32mSuccess\e[0m"
+    else
+        echo "\e[31mFailed\e[0m"
+    fi
 fi
