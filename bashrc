@@ -12,8 +12,8 @@ fi
 
 # Resolve DOTFILES_DIR
 
-if [ -d "$HOME/.dotfiles" ]; then
-    DOTFILES_DIR="$HOME/.dotfiles"
+if [ -d "$HOME/.config/dotfiles" ]; then
+    DOTFILES_DIR="$HOME/.config/dotfiles"
 else
     echo "Unable to find dotfiles, exiting."
     return
