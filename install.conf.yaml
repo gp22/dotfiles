@@ -6,11 +6,15 @@
 
 - link:
     ~/.vimrc: 
-      force: true
     ~/.zshrc:
-      force: true
     ~/.bash_profile:
     ~/.bashrc:
+
+    ~/.config/terminator/config:
+      if: '[ `uname` = "Linux" ] && [ -n `$(hostnamectl | grep Debian)` ]'
+      create: true
+      path: terminator
+
     ~/.oh-my-zsh/custom/functions.zsh:
       if: '[ `$(echo "$ZSH_CUSTOM")` = `$(echo ~/.oh-my-zsh/custom)` ]'
       path: functions
