@@ -81,9 +81,10 @@ set visualbell
 set autoindent            " auto-indent
 set tabstop=4             " tab spacing
 set softtabstop=4         " unify
+set shiftwidth=4          " 
 set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab             " use spaces instead of tabs
-" set smartindent           " automatically insert one extra level of indentation
+set smartindent           " automatically insert one extra level of indentation
 set nowrap                " don't wrap text
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
