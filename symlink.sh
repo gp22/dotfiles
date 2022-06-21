@@ -30,3 +30,5 @@ linkDotfile .bash_profile
 linkDotfile .bashrc
 linkDotfile .vimrc
 linkDotfile .zshrc
+
+ln -s ${dotfilesDir}/functions ~/.oh-my-zsh/custom/functions.zsh
