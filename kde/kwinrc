@@ -6,16 +6,16 @@ OpenGLIsUnsafe=false
 
 [Desktops]
 Id_1=c1c9ad35-aa18-41f6-90fb-c98065faa5f0
-Id_2=75b043b8-3e35-4c84-8d68-6ba833bcbbad
-Name_2=New Desktop
-Number=2
+Id_2[$d]
+Name_2[$d]
+Number=1
 Rows=1
 
 [NightColor]
 Active=true
 LatitudeAuto=25.7689
 LongitudeAuto=-80.1946
-NightTemperature=6500
+NightTemperature=2500
 
 [SubSession: 90f8375b-d59d-4a13-85df-023e2384f7f0]
 active=-1
