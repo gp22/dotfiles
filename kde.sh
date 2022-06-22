@@ -77,5 +77,13 @@ linkDotfile color-schemes
 
 #fonts
 linkDotfile kfontinst
+
 #fonts dpi
 linkDotfile kcmfonts
+
+#gtk
+linkDotfile gtkrc
+linkDotfile gtkrc-2.0
+linkDotfile gtk-3.0
+linkDotfile gtk-4.0
+
