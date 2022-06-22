@@ -1,0 +1,9 @@
+[General]
+Version=201
+ViewPropsTimestamp=2022,6,19,16,1,49.959
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+eDP-1 XPosition 1280x800=105
+eDP-1 YPosition 1280x800=172

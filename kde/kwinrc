@@ -1,0 +1,25 @@
+[$Version]
+update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default
+
+[Compositing]
+OpenGLIsUnsafe=false
+
+[Desktops]
+Id_1=c1c9ad35-aa18-41f6-90fb-c98065faa5f0
+Id_2=75b043b8-3e35-4c84-8d68-6ba833bcbbad
+Name_2=New Desktop
+Number=2
+Rows=1
+
+[NightColor]
+Active=true
+LatitudeAuto=25.7689
+LongitudeAuto=-80.1946
+NightTemperature=6500
+
+[SubSession: 90f8375b-d59d-4a13-85df-023e2384f7f0]
+active=-1
+count=0
+
+[TabBox]
+LayoutName=big_icons
