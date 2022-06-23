@@ -169,6 +169,9 @@ View Style=DetailTree
 ScaleFactor=2
 ScreenScaleFactors=eDP-1=2;DP-1=2;HDMI-1=2;DP-2=2;HDMI-2=2;
 
+[KShortcutsDialog Settings]
+Dialog Size=600,480
+
 [WM]
 activeBackground=49,54,59
 activeBlend=252,252,252
