@@ -3,4 +3,5 @@
 # Todoist
 # https://todoist.com/
 echo "Installing Todoist"
-snap install todoist
+[ ! -d "~/Applications" ] && mkdir ~/Applications
+curl https://todoist.com/linux_app/appimage --output ~/Applications/Todoist.appimage
