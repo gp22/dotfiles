@@ -22,4 +22,4 @@ active=-1
 count=0
 
 [TabBox]
-LayoutName=big_icons
+LayoutName=thumbnail_grid
