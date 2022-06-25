@@ -1,12 +1,10 @@
 #!/bin/bash
 
-dotfilesDir=$(pwd)
-
 function linkDotfile {
-  dest="${HOME}/${1}"
+  dest="${3}"
   dateStr=$(date +%Y-%m-%d-%H%M)
 
-  if [ -h ~/${1} ]; then
+  if [ -h "${dest}" ]; then
     # Existing symlink 
     echo "Removing existing symlink: ${dest}"
     rm ${dest} 
@@ -23,12 +21,11 @@ function linkDotfile {
   fi
 
   echo "Creating new symlink: ${dest}"
-  ln -s ${dotfilesDir}/${1} ${dest}
+  ln -s ${1}/${2} ${dest}
 }
 
-linkDotfile .bash_profile
-linkDotfile .bashrc
-linkDotfile .vimrc
-linkDotfile .zshrc
-
-ln -s ${dotfilesDir}/functions ~/.oh-my-zsh/custom/functions.zsh
+linkDotfile $(pwd) .bash_profile $HOME/.bash_profile
+linkDotfile $(pwd) .bashrc       $HOME/.bashrc
+linkDotfile $(pwd) .vimrc        $HOME/.vimrc
+linkDotfile $(pwd) .zshrc        $HOME/.zshrc
+linkDotfile $(pwd) functions     $HOME/.oh-my-zsh/custom/functions.zsh
