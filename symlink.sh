@@ -1,8 +1,16 @@
 #!/bin/bash
 
 function linkDotfile {
-  dest="${3}"
+  # {1}: src filename
+  # {2}: dest filename, will use ${1} if empty
+  src="$(pwd)/${1}"
   dateStr=$(date +%Y-%m-%d-%H%M)
+
+  if [ -z "${2}" ]; then
+    dest="$HOME/${1}"
+  else
+    dest="$HOME/${2}"
+  fi
 
   if [ -h "${dest}" ]; then
     # Existing symlink 
@@ -21,11 +29,11 @@ function linkDotfile {
   fi
 
   echo "Creating new symlink: ${dest}"
-  ln -s ${1}/${2} ${dest}
+  ln -s ${src} ${dest}
 }
 
-linkDotfile $(pwd) .bash_profile $HOME/.bash_profile
-linkDotfile $(pwd) .bashrc       $HOME/.bashrc
-linkDotfile $(pwd) .vimrc        $HOME/.vimrc
-linkDotfile $(pwd) .zshrc        $HOME/.zshrc
-linkDotfile $(pwd) functions     $HOME/.oh-my-zsh/custom/functions.zsh
+linkDotfile .bash_profile
+linkDotfile .bashrc
+linkDotfile .vimrc
+linkDotfile .zshrc
+linkDotfile functions .oh-my-zsh/custom/functions.zsh
