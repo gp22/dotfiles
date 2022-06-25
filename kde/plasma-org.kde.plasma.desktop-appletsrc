@@ -29,7 +29,7 @@ ToolBoxButtonX=452
 ToolBoxButtonY=50
 
 [Containments][1][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/Altai/
+Image=/usr/share/wallpapers/Flow/
 SlidePaths=/usr/share/plasma/wallpapers,/usr/share/wallpapers
 
 [Containments][2]
@@ -46,7 +46,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][20][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][2][Applets][20][Configuration][Appearance]
 customDateFormat=ddd MMM d
@@ -62,7 +62,7 @@ immutability=1
 plugin=org.kde.plasma.kickerdash
 
 [Containments][2][Applets][26][Configuration]
-PreloadWeight=51
+PreloadWeight=45
 
 [Containments][2][Applets][26][Configuration][ConfigDialog]
 DialogHeight=1140
@@ -77,6 +77,9 @@ global=Alt+Space
 [Containments][2][Applets][28]
 immutability=1
 plugin=org.kde.plasma.icontasks
+
+[Containments][2][Applets][28][Configuration]
+PreloadWeight=34
 
 [Containments][2][Applets][28][Configuration][ConfigDialog]
 DialogHeight=1140
@@ -104,7 +107,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][7][Configuration]
-PreloadWeight=45
+PreloadWeight=49
 SystrayContainmentId=8
 
 [Containments][2][ConfigDialog]
@@ -138,7 +141,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][8][Applets][11][Configuration]
-PreloadWeight=0
+PreloadWeight=10
 
 [Containments][8][Applets][12]
 immutability=1
@@ -208,7 +211,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][23][Configuration]
-PreloadWeight=12
+PreloadWeight=0
 
 [Containments][8][Applets][24]
 immutability=1
@@ -222,7 +225,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][8][Applets][25][Configuration]
-PreloadWeight=18
+PreloadWeight=2
 
 [Containments][8][Applets][9]
 immutability=1

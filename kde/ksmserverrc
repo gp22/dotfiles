@@ -5,27 +5,27 @@ update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_valu
 count=0
 
 [Session: saved at previous logout]
-clientId1=1014614b147a2000165578326000000014680004
-clientId2=1014614b147a2000165585490800000014550008
-clientId3=1014614b147a2000165573204000000012980012
-clientId4[$d]
-count=3
+clientId1=1014614b147a2000165593706900000014690005
+clientId2=1014614b147a2000165602909400000015440008
+clientId3=1014614b147a2000165593762800000014690014
+clientId4=1014614b147a2000165594400300000014690031
+count=4
 program1=/usr/lib/x86_64-linux-gnu/libexec/DiscoverNotifier
 program2=pulseaudio
 program3=/usr/bin/megasync
-program4[$d]
-restartCommand1=/usr/lib/x86_64-linux-gnu/libexec/DiscoverNotifier,-session,1014614b147a2000165578326000000014680004_1655867143_818365
+program4=/usr/bin/korgac
+restartCommand1=/usr/lib/x86_64-linux-gnu/libexec/DiscoverNotifier,-session,1014614b147a2000165593706900000014690005_1656042631_235640
 restartCommand2=
-restartCommand3=/usr/bin/megasync,-session,1014614b147a2000165573204000000012980012_1655867143_818591
-restartCommand4[$d]
+restartCommand3=/usr/bin/megasync,-session,1014614b147a2000165593762800000014690014_1656042631_235671
+restartCommand4=/usr/bin/korgac,-session,1014614b147a2000165594400300000014690031_1656042631_236161
 restartStyleHint1=0
 restartStyleHint2=0
 restartStyleHint3=0
-restartStyleHint4[$d]
+restartStyleHint4=0
 userId1=paul
 userId2=paul
 userId3=paul
-userId4[$d]
+userId4=paul
 
 [SubSession: 90f8375b-d59d-4a13-85df-023e2384f7f0]
 count=0
