@@ -2,4 +2,4 @@
 
 # Virtualbox 
 echo "Installing Virtualbox"
-sudo apt install -y virtualbox
+sudo apt install -y virtualbox virtualbox-ext-pack
