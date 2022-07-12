@@ -17,6 +17,9 @@ LatitudeAuto=25.7689
 LongitudeAuto=-80.1946
 NightTemperature=2500
 
+[Plugins]
+kwin4_effect_translucencyEnabled=true
+
 [SubSession: 90f8375b-d59d-4a13-85df-023e2384f7f0]
 active=-1
 count=0

@@ -54,15 +54,15 @@ dateDisplayFormat=BesideTime
 dateFormat=custom
 
 [Containments][2][Applets][20][Configuration][ConfigDialog]
-DialogHeight=1140
-DialogWidth=1520
+DialogHeight=1489
+DialogWidth=2560
 
 [Containments][2][Applets][26]
 immutability=1
 plugin=org.kde.plasma.kickerdash
 
 [Containments][2][Applets][26][Configuration]
-PreloadWeight=29
+PreloadWeight=0
 
 [Containments][2][Applets][26][Configuration][ConfigDialog]
 DialogHeight=1140
@@ -79,7 +79,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][2][Applets][28][Configuration]
-PreloadWeight=18
+PreloadWeight=0
 
 [Containments][2][Applets][28][Configuration][ConfigDialog]
 DialogHeight=1140
@@ -107,7 +107,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][7][Configuration]
-PreloadWeight=78
+PreloadWeight=47
 SystrayContainmentId=8
 
 [Containments][2][ConfigDialog]
@@ -211,7 +211,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][23][Configuration]
-PreloadWeight=29
+PreloadWeight=0
 
 [Containments][8][Applets][24]
 immutability=1

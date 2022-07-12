@@ -9,5 +9,5 @@ eDP-1 Width 1280x800=438
 [MainWindow]
 MenuBar=Disabled
 ToolBarsMovable=Disabled
-eDP-1 XPosition 1280x800=391
-eDP-1 YPosition 1280x800=212
+eDP-1 XPosition 1280x800=31
+eDP-1 YPosition 1280x800=114
