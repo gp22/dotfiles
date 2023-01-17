@@ -118,3 +118,9 @@ if [ -e "$HOME/.nvm" ]; then
         echo "\e[31mFailed\e[0m"
     fi
 fi
+
+# Set Homebrew options if running on Mac
+
+if [ "$(uname)" = Darwin ]; then
+    export HOMEBREW_CASK_OPTS=--no-quarantine
+fi
