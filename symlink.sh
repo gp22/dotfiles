@@ -34,6 +34,7 @@ function linkDotfile {
 
 linkDotfile .bash_profile
 linkDotfile .bashrc
+linkDotfile .p10k.zsh
 linkDotfile .vimrc
 linkDotfile .zshrc
 linkDotfile functions .oh-my-zsh/custom/functions.zsh
