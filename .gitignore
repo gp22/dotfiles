@@ -1,0 +1,6 @@
+nvim/tags
+nvim/test.sh
+nvim/.luarc.json
+
+nvim/spell/
+nvim/lazy-lock.json

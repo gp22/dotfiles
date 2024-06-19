@@ -34,6 +34,7 @@ function linkDotfile {
 
 linkDotfile .bash_profile
 linkDotfile .bashrc
+linkDotfile nvim .config/nvim
 linkDotfile .p10k.zsh
 linkDotfile .vimrc
 linkDotfile .zshrc
