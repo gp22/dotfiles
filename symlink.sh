@@ -36,6 +36,7 @@ linkDotfile .bash_profile
 linkDotfile .bashrc
 linkDotfile nvim .config/nvim
 linkDotfile .p10k.zsh
+linkDotfile .tmux.conf
 linkDotfile .vimrc
 linkDotfile .zshrc
 linkDotfile functions .oh-my-zsh/custom/functions.zsh
