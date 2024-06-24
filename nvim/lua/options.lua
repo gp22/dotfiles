@@ -74,3 +74,5 @@ vim.opt.shiftround = true
 
 -- Automatically insert one extra level of indentation
 vim.opt.smartindent = true
+
+vim.opt.autoindent = true
