@@ -76,3 +76,14 @@ vim.opt.shiftround = true
 vim.opt.smartindent = true
 
 vim.opt.autoindent = true
+
+-- Draw a border on the 81st column.
+vim.cmd [[
+  if exists('+colorcolumn')
+    set colorcolumn=81
+    highlight ColorColumn ctermbg=red
+  else
+    highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+    match OverLength /\%81v.\+/
+  endif
+]]
