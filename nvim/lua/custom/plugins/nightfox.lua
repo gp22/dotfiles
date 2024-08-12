@@ -13,6 +13,11 @@ return {
             types = 'italic,bold',
           },
         },
+        groups = {
+          all = {
+            Whitespace = { fg = 'bg4' },
+          },
+        },
       }
       vim.cmd.colorscheme 'nordfox'
     end,
