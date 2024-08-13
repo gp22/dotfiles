@@ -32,6 +32,7 @@ function linkDotfile {
   ln -s ${src} ${dest}
 }
 
+linkDotfile .alacritty.toml
 linkDotfile .bash_profile
 linkDotfile .bashrc
 linkDotfile nvim .config/nvim
