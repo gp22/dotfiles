@@ -81,6 +81,7 @@ color = "#bf88bc"
 [cursor]
 style = { blinking = "Always" }
 blink_timeout = 0
+blink_interval = 500
 
 [font]
 normal = { family = "Hack Nerd Font Mono", style = "Regular" }
