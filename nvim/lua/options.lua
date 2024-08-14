@@ -77,7 +77,12 @@ vim.opt.smartindent = true
 
 vim.opt.autoindent = true
 
--- Draw a border on the 81st column.
+-- Disable automatically commenting the next newline after a comment
+vim.cmd [[
+  autocmd BufEnter * set formatoptions-=cro
+]]
+
+-- Draw a border on the 81st column
 vim.cmd [[
   if exists('+colorcolumn')
     set colorcolumn=81
