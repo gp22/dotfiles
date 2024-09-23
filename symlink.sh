@@ -13,9 +13,9 @@ function linkDotfile {
   fi
 
   if [ -h "${dest}" ]; then
-    # Existing symlink 
+    # Existing symlink
     echo "Removing existing symlink: ${dest}"
-    rm ${dest} 
+    rm ${dest}
 
   elif [ -f "${dest}" ]; then
     # Existing file
@@ -35,6 +35,7 @@ function linkDotfile {
 linkDotfile .alacritty.toml
 linkDotfile .bash_profile
 linkDotfile .bashrc
+linkDotfile kitty .config/kitty
 linkDotfile nvim .config/nvim
 linkDotfile .p10k.zsh
 linkDotfile .tmux.conf
