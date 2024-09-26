@@ -21,3 +21,18 @@ git clone https://github.com/gp22/dotfiles.git ~/.config/dotfiles
 ```
 
 Then `cd` into the directory and run `./install.sh`
+
+## Linux
+
+### Kmonad
+
+Update home directory in `keyboard_laptop.service` and then copy it to `/etc/systemd/system/keyboard_laptop.service`
+
+Reload systemd
+`sudo systemctl daemon-reload`
+
+Start the keyboard_mylaptop service
+`sudo systemctl start keyboard_laptop`
+
+Enable the keyboard_mylaptop service to start on boot
+`sudo systemctl enable keyboard_laptop`
