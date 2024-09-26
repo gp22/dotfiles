@@ -1,0 +1,13 @@
+[Unit]
+Description=laptop keyboard kmonad
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/kmonad ~/.config/linux_laptop.kbd
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
