@@ -29,10 +29,16 @@ Then `cd` into the directory and run `./install.sh`
 Update home directory in `keyboard_laptop.service` and then copy it to `/etc/systemd/system/keyboard_laptop.service`
 
 Reload systemd
-`sudo systemctl daemon-reload`
+```bash
+sudo systemctl daemon-reload
+```
 
 Start the keyboard_mylaptop service
-`sudo systemctl start keyboard_laptop`
+```bash
+sudo systemctl start keyboard_laptop
+```
 
 Enable the keyboard_mylaptop service to start on boot
-`sudo systemctl enable keyboard_laptop`
+```bash
+sudo systemctl enable keyboard_laptop
+```
