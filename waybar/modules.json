@@ -19,11 +19,6 @@
         "format": "{class}",
         "separate-outputs": true
     },
-    "custom/appmenu": {
-        "format": "",
-        "on-click": "rofi -disable-history -drun-match-fields name -show drun -theme-str '@import \"app.rasi\"'",
-        "tooltip": false
-    },
     "custom/exit": {
         "format": "",
         "on-click": "wlogout",
@@ -62,17 +57,17 @@
     },
     "cpu": {
         "interval": 5,
-        "format": "<span color=\"#f7768e\"></span>  {usage}%",
+        "format": "<span color=\"#000\"></span>  {usage}%",
         "max-length": 10
     },
     "memory": {
         "interval": 5,
-        "format": "<span color=\"#FBC02D\"></span>  {used} GiB",
+        "format": "<span color=\"#000\"></span>  {used} GiB",
         "max-length": 10
     },
     "network": {
         "format": "{ifname}",
-        "format-wifi": "<span color=\"#4DD0E1\"></span>  {essid}",
+        "format-wifi": "<span color=\"#000\"></span>  {essid}",
         "format-ethernet": "  {ifname}",
         "format-disconnected": "Disconnected",
         "tooltip-format": " {ifname} via {gwaddri}",
@@ -89,7 +84,7 @@
             "critical": 15
         },
         "format": "<span color=\"#9ece6a\">{icon}</span>{capacity}%",
-        "format-charging": "<span color=\"#9ece6a\"></span>  {capacity}%",
+        "format-charging": "<span color=\"#000\"></span>  {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-alt": "{icon}  {time}",
         "format-icons": [
@@ -130,7 +125,7 @@
     },
     "backlight": {
         "device": "intel_backlight",
-        "format": "<span color=\"#e0af68\">{icon}</span> {percent}%",
+        "format": "<span color=\"#000\">{icon}</span> {percent}%",
         "format-icons": [
             "󰃠",
             "󰃠"
