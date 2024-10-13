@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/kmonad ~/.config/linux_laptop.kbd
+ExecStart=/usr/bin/kmonad ~/.config/dotfiles/linux_laptop.kbd
 Restart=always
 User=root
 Group=root

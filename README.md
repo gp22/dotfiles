@@ -26,7 +26,7 @@ Then `cd` into the directory and run `./install.sh`
 
 ### Kmonad
 
-Update home directory in `keyboard_laptop.service` and then copy it to `/etc/systemd/system/keyboard_laptop.service`
+Copy `~/.config/dotfiles/keyboard_laptop.service` to `/etc/systemd/system/keyboard_laptop.service`
 
 Reload systemd
 ```bash
