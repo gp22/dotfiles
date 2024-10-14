@@ -46,6 +46,7 @@ linkDotfile functions .oh-my-zsh/custom/functions.zsh
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   linkDotfile brave-flags.conf .config/brave-flags.conf
   linkDotfile chromium-flags.conf .config/chromium-flags.conf
+  linkDotfile electron-flags.conf .config/electron-flags.conf
   linkDotfile hypr .config/hypr
   linkDotfile rofi .config/rofi
   linkDotfile waybar .config/waybar
