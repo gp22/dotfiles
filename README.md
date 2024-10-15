@@ -26,6 +26,8 @@ Then `cd` into the directory and run `./install.sh`
 
 ### Kmonad
 
+Linux service setup came from [this](https://www.swe-devops.com/posts/kmonad-service-systemd/) article.
+
 Copy `~/.config/dotfiles/keyboard_laptop.service` to `/etc/systemd/system/keyboard_laptop.service`
 
 Reload systemd
@@ -33,12 +35,12 @@ Reload systemd
 sudo systemctl daemon-reload
 ```
 
-Start the keyboard_mylaptop service
+Start the keyboard_laptop service
 ```bash
 sudo systemctl start keyboard_laptop
 ```
 
-Enable the keyboard_mylaptop service to start on boot
+Enable the keyboard_laptop service to start on boot
 ```bash
 sudo systemctl enable keyboard_laptop
 ```
