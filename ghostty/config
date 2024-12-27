@@ -1,0 +1,6 @@
+cursor-style = block
+font-family = "Hack Nerd Font"
+theme = catppuccin-latte
+window-decoration = false
+window-padding-x = 0
+window-padding-y = 0
