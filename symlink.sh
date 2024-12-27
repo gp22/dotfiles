@@ -35,6 +35,7 @@ function linkDotfile {
 linkDotfile .alacritty.toml
 linkDotfile .bash_profile
 linkDotfile .bashrc
+linkDotfile ghostty .config/ghostty
 linkDotfile kitty .config/kitty
 linkDotfile nvim .config/nvim
 linkDotfile .p10k.zsh
